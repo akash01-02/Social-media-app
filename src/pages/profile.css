@@ -1,0 +1,114 @@
+.profile {
+  display: flex;
+}
+
+.profileRight {
+  flex: 9;
+}
+
+.profileCover {
+  height: 320px;
+  position: relative;
+}
+
+.coverImageContainer {
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.profileCoverImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.profileImageContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.profileUserImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profileInfoName {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profileInfoDesc {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.profileRightBottom {
+  display: flex;
+}
+
+.imageEditOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  border-radius: inherit;
+}
+
+.imageEditOverlay:hover {
+  opacity: 1;
+}
+
+.imageEditOverlay svg {
+  color: white;
+  font-size: 24px;
+}
+
+.imageInput {
+  display: none;
+}
+
+.uploadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.uploadingMessage {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}

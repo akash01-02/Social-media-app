@@ -1,0 +1,290 @@
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+  background-color: white;
+}
+
+.postWrapper {
+  padding: 10px;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postDate {
+  font-size: 12px;
+  color: #666;
+}
+
+.postTopRight {
+  position: relative;
+}
+
+.moreIcon {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.moreIcon:hover {
+  background-color: #f0f2f5;
+}
+
+.postMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 150px;
+  padding: 8px 0;
+  margin-top: 5px;
+}
+
+.postMenuItem {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.postMenuItem:hover {
+  background-color: #f0f2f5;
+}
+
+.postMenuIcon {
+  margin-right: 8px;
+  font-size: 20px !important;
+  color: #666;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeButtons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #666;
+}
+
+.likeIcon.liked {
+  color: #1877f2;
+}
+
+.postLikeCounter {
+  font-size: 15px;
+  color: #666;
+}
+
+.postCommentText {
+  cursor: pointer;
+  font-size: 15px;
+  color: #666;
+}
+
+.postCommentText:hover {
+  text-decoration: underline;
+}
+
+/* Comments Section */
+.commentsSection {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.commentForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.commentInput {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.commentInput:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+.commentSubmitButton {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.commentSubmitButton:hover {
+  color: #1464c7;
+}
+
+.commentsList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.commentItem {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.commentProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.commentContent {
+  flex: 1;
+  background-color: #f0f2f5;
+  border-radius: 18px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.commentUsername {
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.commentDate {
+  font-size: 12px;
+  color: #666;
+}
+
+.commentText {
+  font-size: 14px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.commentDelete {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.commentContent:hover .commentDelete {
+  opacity: 1;
+}
+
+.commentDelete:hover {
+  color: #1877f2;
+}
+
+/* Post Menu */
+.postMenu {
+  position: relative;
+}
+
+.postMenuIcon {
+  cursor: pointer;
+  color: #666;
+}
+
+.postMenuOptions {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 120px;
+}
+
+.postMenuOption {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.postMenuOption:hover {
+  background-color: #f0f2f5;
+}
+
+.postMenuOptionIcon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #666;
+}
